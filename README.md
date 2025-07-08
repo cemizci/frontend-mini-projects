@@ -77,8 +77,10 @@ Each project in this monorepo is isolated and represents a specific learning goa
 
 🗂 Projects in This Monorepo
 
+---
+
 projects/
-├── count/                  → Week 1 · Counter using useState
+├── count/                   → Week 1 · Counter using useState
 ├── reducerCount/           → Week 1 · Counter using useReducer
 ├── cartSlice/              → Week 1–2 · Redux-powered shopping cart core
 │

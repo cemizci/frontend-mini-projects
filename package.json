@@ -1,0 +1,14 @@
+{
+  "name": "reactprojects",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "projects/*"
+  ],
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "react-redux": "^9.2.0",
+    "tailwindcss": "^4.1.11"
+  }
+}

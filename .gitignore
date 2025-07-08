@@ -1,0 +1,40 @@
+# Global Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# IDE/editor config
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+*.zip
+*.tar.gz
+
+# Monorepo Specific
+projects/**/node_modules
+projects/**/dist
+

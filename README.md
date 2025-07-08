@@ -75,7 +75,7 @@ Each project in this monorepo is isolated and represents a specific learning goa
 - React Router for route-based navigation
 - 🔜 Context API (optional alternative to Redux for lightweight global state)
 
-🗂 Projects in This Monorepo
+# 🗂 Projects in This Monorepo
 
 ---
 
@@ -94,7 +94,8 @@ projects/
 └── utils-refactor/         → Week 4 · Refactoring functions & architecture
 
 
-🛠 How to Run a Project
+
+# 🛠 How to Run a Project
 Each project is self-contained under the projects/ directory.
 
 cd projects/task-manager
@@ -102,7 +103,8 @@ npm install
 npm run dev
 
 
-🏗 Tech Stack
+# 🏗 Tech Stack
+
  - React 18+
 
  - Redux Redux-Toolkit
@@ -113,7 +115,9 @@ npm run dev
 
  - Vite
 
- 🔖 License
+
+ # 🔖 License
+
  - MIT
 
 

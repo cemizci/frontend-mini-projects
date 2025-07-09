@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid  } from "@reduxjs/toolkit";
 
 const initialState = {
     filmItems: [],
@@ -11,20 +11,31 @@ const filmSlice = createSlice({
     initialState,
     reducers: {
         addFilm: (state,action) => {
-            state.filmItems.push(action.payload);
+            const newFilm = {
+                id: nanoid(),
+                title: action.payload,
+                watched: false,
+            };
+            state.filmItems.push(newFilm);
             state.totalFilms += 1;
         },
         removeFilm: (state,action) => {
             state.filmItems = state.filmItems.filter(
                 (film) => film.id !== action.payload
+                
             );
+            state.totalFilms = state.filmItems.length; 
         },
         clearFilm: (state) => {
             state.filmItems = [];
             state.totalFilms = 0;
         },
-        calculateTotalFilms: (state) => {
-            state.totalFilms = state.filmItems.length; 
+        toggleWatched: (state, action) => {
+            const film = state.filmItems.find(
+                (film) => film.id === action.payload);
+                if (film) {
+                    film.watched = !film.watched;
+                }
         },
     },
 });
@@ -33,7 +44,7 @@ export const {
     addFilm,
     removeFilm,
     clearFilm,
-    calculateTotalFilms,
+    toggleWatched,
 } = filmSlice.actions;
 
 export default filmSlice.reducer;
